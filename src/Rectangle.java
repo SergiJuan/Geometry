@@ -3,6 +3,8 @@ public class Rectangle extends Point {
     private int height;
 
     public Rectangle() {
-        super(0,0);
+        super();
+        width = 0;
+        height = 0;
     }
 }
