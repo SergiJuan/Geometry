@@ -25,7 +25,7 @@ public class Polygon {
         StringBuilder value = new StringBuilder();
         for (int i = 0; i < points.length; i++) {
             if (i == points.length - 1) {
-                value.append(points[i].toString());
+                value.append(points[0].toString());
             } else {
                 value.append(points[i].toString() + " - ");
             }
