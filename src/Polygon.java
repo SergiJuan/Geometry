@@ -23,8 +23,8 @@ public class Polygon {
     @Override
     public String toString() {
         StringBuilder value = new StringBuilder();
-        for (int i = 0; i < points.length; i++) {
-            if (i == points.length - 1) {
+        for (int i = 0; i <= points.length; i++) {
+            if (i == points.length) {
                 value.append(points[0].toString());
             } else {
                 value.append(points[i].toString() + " - ");
