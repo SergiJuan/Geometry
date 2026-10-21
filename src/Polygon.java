@@ -10,9 +10,18 @@ public class Polygon {
         this.points = points;
     }
 
-    public int getLenght() {
-        return points.length;
+    public double getLenght() {
+        double lenght = 0;
+        for (int i = 0; i < points.length - 1; i++) {
+            Segment side = new Segment(points[i], points[i+1]);
+            lenght += side.getModule();
+        }
+        Segment side = new Segment(points[points.length - 1], points[0]);
+        lenght += side.getModule();
+
+        return lenght;
     }
+
 
     public void setOffset(int offX, int offY) {
         for (Point point : points) {

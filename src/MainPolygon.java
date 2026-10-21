@@ -12,5 +12,7 @@ public class MainPolygon {
         polygon.setOffset(4,4);
 
         System.out.println(polygon);
+
+        System.out.println(polygon.getLenght());
     }
 }
