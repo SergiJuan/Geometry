@@ -26,6 +26,10 @@ public class Rectangle extends Point {
         this.height = seg.getEndPoint().getY() - seg.getStartPoint().getY();
     }
 
+    public int getArea() {
+        return width * height;
+    }
+
     @Override
     public String toString() {
         return super.toString() + " width: " + width + " height: " + height;
