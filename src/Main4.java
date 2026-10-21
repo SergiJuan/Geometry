@@ -7,5 +7,9 @@ public class Main4 {
         rectangle.moveTo(4,7);
 
         System.out.println(rectangle);
+
+        Rectangle rectangle2 = new Rectangle(new Point(1,1), 8, 6);
+
+        System.out.println(rectangle2);
     }
 }
