@@ -42,6 +42,10 @@ public class Rectangle extends Point {
         return new Point(super.getX() + width, super.getY() + height);
     }
 
+    public Point getBottomLeftPoint() {
+        return new Point(super.getX(), super.getY());
+    }
+
     @Override
     public String toString() {
         return super.toString() + " width: " + width + " height: " + height;
