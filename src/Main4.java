@@ -21,5 +21,9 @@ public class Main4 {
         System.out.println(rectangle4);
 
         System.out.println(rectangle4.getPoint());
+
+        Rectangle rectangle5 = new Rectangle(new Point(5,6), 10, 8);
+
+        System.out.println("Arriba-Izquierda: " + rectangle5.getTopLeftPoint() + " Arriba-Derecha: " + rectangle5.getTopRightPoint() + " Abajo-Izquierda: " + rectangle5.getBottomLeftPoint() + " Abajo-Derecha: " + rectangle5.getBottomRightPoint());
     }
 }
