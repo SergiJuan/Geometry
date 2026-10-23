@@ -30,6 +30,10 @@ public class Rectangle extends Point {
         return width * height;
     }
 
+    public Point getPoint() {
+        return new Point(super.getX(), super.getY());
+    }
+
     @Override
     public String toString() {
         return super.toString() + " width: " + width + " height: " + height;
