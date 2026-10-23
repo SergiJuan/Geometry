@@ -21,9 +21,16 @@ public class Rectangle extends Point {
     }
 
     public Rectangle(Segment seg) {
-        super(seg.getStartPoint().getX(), seg.getStartPoint().getY());
-        this.width = seg.getEndPoint().getX() - seg.getStartPoint().getX();
-        this.height = seg.getEndPoint().getY() - seg.getStartPoint().getY();
+        super();
+        super.setX(seg.getStartPoint().getX() < seg.getEndPoint().getX() ?
+                seg.getStartPoint().getX() : seg.getEndPoint().getX());
+        super.setY(seg.getStartPoint().getY() < seg.getEndPoint().getY() ?
+                seg.getStartPoint().getY() : seg.getEndPoint().getY());
+
+        this.width = seg.getStartPoint().getX() < seg.getEndPoint().getX() ?
+                seg.getEndPoint().getX() - seg.getStartPoint().getX() : seg.getStartPoint().getX() - seg.getEndPoint().getX();
+        this.height = seg.getStartPoint().getY() < seg.getEndPoint().getY() ?
+                seg.getEndPoint().getY() - seg.getStartPoint().getY() : seg.getStartPoint().getY() - seg.getEndPoint().getY();;
     }
 
     public int getArea() {
