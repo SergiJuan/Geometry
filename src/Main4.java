@@ -19,5 +19,7 @@ public class Main4 {
         Rectangle rectangle4 = new Rectangle(new Segment(new Point(2,2), new Point(5,8)));
 
         System.out.println(rectangle4);
+
+        System.out.println(rectangle4.getPoint());
     }
 }
